@@ -98,7 +98,7 @@
             </TabItem>
             <TabItem Header="Расстояния">
                 <UniformGrid Rows="2" Columns="2">
-                    <GroupBox Header="Дюймы в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Red">
+                    <GroupBox Header="Дюймы в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FFF300FF">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -116,7 +116,7 @@
                             <TextBox x:Name="ResIn" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Футы в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FF02E3F9">
+                    <GroupBox Header="Футы в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FF0218F9">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -127,7 +127,7 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Row="0" Grid.Column="0" Content="Введите количество футов"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="Введите футы"/>
                             <TextBox x:Name="Foot" Grid.Row="0" Grid.Column="1" Margin="3"/>
                             <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Рассчитать" Margin="10,3" Click="Button_Click_4"/>
                             <Label Grid.Row="2" Grid.Column="0" Content="Результат"/>
@@ -135,7 +135,7 @@
                         </Grid>
                     </GroupBox>
 
-                    <GroupBox Header="Мили (США) в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Yellow">
+                    <GroupBox Header="Мили в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Lime">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -146,14 +146,14 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Row="0" Grid.Column="0" Content="Введите количество миль (США)"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="Введите мили"/>
                             <TextBox x:Name="Mi" Grid.Row="0" Grid.Column="1" Margin="3"/>
                             <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Рассчитать" Margin="10,3" Click="Button_Click_6"/>
                             <Label Grid.Row="2" Grid.Column="0" Content="Результат"/>
                             <TextBox x:Name="ResMi" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
-                    <GroupBox Header="Версты в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="Green">
+                    <GroupBox Header="Вёрсты в метры" Margin="10" Padding="5" BorderThickness="2" BorderBrush="#FFCB8622">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition/>
@@ -164,7 +164,7 @@
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Row="0" Grid.Column="0" Content="Введите количество верст"/>
+                            <Label Grid.Row="0" Grid.Column="0" Content="Введите количество вёрст"/>
                             <TextBox x:Name="Verst" Grid.Row="0" Grid.Column="1" Margin="3"/>
                             <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Рассчитать" Margin="10,3" Click="Button_Click_7"/>
                             <Label Grid.Row="2" Grid.Column="0" Content="Результат"/>
