@@ -26,142 +26,91 @@ namespace Занятие_4_WpfApp1
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            double rateDollar = Convert.ToDouble(rate.Text);
-            double sumDollar = Convert.ToDouble(sum.Text);
-            double resDouble = rateDollar * sumDollar;
-            resSum.Text = resDouble.ToString();
+            string dollar = Currensy_doll();
+            double rateDollar = Convert.ToDouble(dollar);
+            double sumDollar = Convert.ToDouble(SumDollar.Text);
+            double resDollar = rateDollar * sumDollar;
+            RateDollar.Text = dollar.ToString();
+            ResDollar.Text = resDollar.ToString();
+
         }
-        //{
-        //    double RateDollar = Convert.ToDouble(rate.Text);
-        //    double sumDollar = Convert.ToDouble(sum.Text);
-        //    double resDouble = rateDollar * sumDollar;
-        //    resSum.Text = resDouble.ToString();
-        //}
-        ////private void Button_Click_1(object sender, RoutedEventArgs e)
-        ////{
-        ////    double rateDollar = Convert.ToDouble(rate1.Text);
-        ////    double sumDollar = Convert.ToDouble(sum1.Text);
-        ////    double resDouble = rateDollar * sumDollar;
-        //    resSum1.Text = resDouble.ToString();
-        //}
-        //private void Button_Click_2(object sender, RoutedEventArgs e)
-        //{
-        //    double rateDollar = Convert.ToDouble(rate2.Text);
-        //    double sumDollar = Convert.ToDouble(sum2.Text);
-        //    double resDouble = rateDollar * sumDollar;
-        //    resSum2.Text = resDouble.ToString();
-        //}
 
-        //private void Button_Click_3(object sender, RoutedEventArgs e)
-        //{
-        //    double rateDollar = Convert.ToDouble(rate3.Text);
-        //    double sumDollar = Convert.ToDouble(sum3.Text);
-        //    double resDouble = rateDollar * sumDollar;
-        //    resSum3.Text = resDouble.ToString();
-        //}
+        private string Currensy_doll()
+        {
+            throw new NotImplementedException();
+        }
 
-        //private void Button_Click_4(object sender, RoutedEventArgs e)
-        //{
-        //    cm.Text = (Convert.ToDouble(mm.Text) * 0.1).ToString();
-        //}
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string Euro = Currensy_eur();
+            double rateEuro = Convert.ToDouble(Euro);
+            double sumEuro = Convert.ToDouble(SumEuro.Text);
+            double resEuro = rateEuro * sumEuro;
+            RateEuro.Text = Euro.ToString();
+            ResEuro.Text = resEuro.ToString();
+        }
 
-        //private void Button_Click_5(object sender, RoutedEventArgs e)
-        //{
-        //    m.Text = (Convert.ToDouble(mm1.Text) * 0.001).ToString();
-        //}
+        private string Currensy_eur()
+        {
+            throw new NotImplementedException();
+        }
 
-        //private void Button_Click_6(object sender, RoutedEventArgs e)
-        //{
-        //    km.Text = (Convert.ToDouble(mm2.Text) * 0.000001).ToString();
-        //}
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string Grvn = Currensy_grvn();
+            double rateUah = Convert.ToDouble(Grvn);
+            double sumUah = Convert.ToDouble(SumUah.Text);
+            double resUah = rateUah * sumUah;
+            RateUah.Text = Grvn.ToString();
+            ResUah.Text = resUah.ToString();
+        }
 
-        //private void Button_Click_7(object sender, RoutedEventArgs e)
-        //{
-        //    kg.Text = (Convert.ToDouble(gr.Text) * 0.001).ToString();
-        //}
+        private string Currensy_grvn()
+        {
+            throw new NotImplementedException();
+        }
 
-        //private void Button_Click_8(object sender, RoutedEventArgs e)
-        //{
-        //    sc.Text = (Convert.ToDouble(gr1.Text) * 0.00001).ToString();
-        //}
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            string Drm = Currensy_drm();
+            double rateAmd = Convert.ToDouble(Drm);
+            double sumAmd = Convert.ToDouble(SumAmd.Text);
+            double resAmd = rateAmd * sumAmd;
+            RateAmd.Text = Drm.ToString();
+            ResAmd.Text = resAmd.ToString();
+        }
 
-        //private void Button_Click_9(object sender, RoutedEventArgs e)
-        //{
-        //    tn.Text = (Convert.ToDouble(gr2.Text) * 0.000001).ToString();
-        //}
+        private string Currensy_drm()
+        {
+            throw new NotImplementedException();
+        }
 
-        //private void Button_Click_10(object sender, RoutedEventArgs e)
-        //{
-        //    min.Text = (Convert.ToDouble(sec.Text) * 0.017).ToString();
-        //}
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            double foot = Convert.ToDouble(Foot.Text);
+            double resultFoot = foot * 0.31;
+            ResFoot.Text = resultFoot.ToString();
+        }
 
-        //private void Button_Click_11(object sender, RoutedEventArgs e)
-        //{
-        //    ch.Text = (Convert.ToDouble(sec1.Text) * 0.00028).ToString();
-        //}
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            double inch = Convert.ToDouble(Inch.Text);
+            double resultIn = inch * 0.025;
+            ResIn.Text = resultIn.ToString();
+        }
 
-        //private void Button_Click_12(object sender, RoutedEventArgs e)
-        //{
-        //    dn.Text = (Convert.ToDouble(sec2.Text) * 0.000012).ToString();
-        //}
-        //private void Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    double rateDollar = Convert.ToDouble(rate.Text);
-        //    double sumDollar = Convert.ToDouble(sum.Text);
-        //    double resDollar = rateDollar * sumDollar;
-        //    resSum.Text = resDollar.ToString();
-        //}
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            double mi = Convert.ToDouble(Mi.Text);
+            double resultMi = mi * 1609;
+            ResMi.Text = resultMi.ToString();
+        }
 
-        //private void Button_Click_1(object sender, RoutedEventArgs e)
-        //{
-        //    double rateEuro = Convert.ToDouble(rate1.Text);
-        //    double sumEuro = Convert.ToDouble(sum1.Text);
-        //    double resEuro = rateEuro * sumEuro;
-        //    resSum1.Text = resEuro.ToString();
-        //}
-
-        //private void Button_Click_2(object sender, RoutedEventArgs e)
-        //{
-        //    double rateGrivna = Convert.ToDouble(rate2.Text);
-        //    double sumGrivna = Convert.ToDouble(sum2.Text);
-        //    double resGrivna = rateGrivna * sumGrivna;
-        //    resSum2.Text = resGrivna.ToString();
-        //}
-
-        //private void Button_Click_3(object sender, RoutedEventArgs e)
-        //{
-        //    double rateDrama = Convert.ToDouble(rate3.Text);
-        //    double sumDrama = Convert.ToDouble(sum3.Text);
-        //    double resGrivna = rateDrama * sumDrama;
-        //    resSum3.Text = resGrivna.ToString();
-        //}
-
-        //private void Button_Click_4(object sender, RoutedEventArgs e)
-        //{
-        //    double distanceInch = Convert.ToDouble(distance.Text);
-        //    double distanceMeters = 0.0254 * distanceInch;
-        //    distanceRes.Text = distanceMeters.ToString();
-        //}
-
-        //private void Button_Click_5(object sender, RoutedEventArgs e)
-        //{
-        //    double distanceFeet = Convert.ToDouble(distance1.Text);
-        //    double distanceMeters = 0.3048 * distanceFeet;
-        //    distanceRes1.Text = distanceMeters.ToString();
-        //}
-
-        //private void Button_Click_6(object sender, RoutedEventArgs e)
-        //{
-        //    double distanceMiles = Convert.ToDouble(distance2.Text);
-        //    double distanceMeters = 1609.34 * distanceMiles;
-        //    distanceRes2.Text = distanceMeters.ToString();
-        //}
-
-        //private void Button_Click_7(object sender, RoutedEventArgs e)
-        //{
-        //    double distanceVerst = Convert.ToDouble(distance3.Text);
-        //    double distanceMeters = 1066.8 * distanceVerst;
-        //    distanceRes3.Text = distanceMeters.ToString();
-        //}
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            double vrst = Convert.ToDouble(Verst.Text);
+            double resultNm = vrst * 1066;
+            ResVerst.Text = resultNm.ToString();
+        }      
     }
 }
